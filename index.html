@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:lr="http://adobe.com/lrg/0.0"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sannes birthday bash! </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" title="Custom Settings" href="assets/css/custom.css" >
+        <script src="assets/js/libs/modernizr.custom.23122.js"></script>
+    </head>
+    <body class=" row-spacing-none" data-pagination-style="scroll" data-target-row-height="200">
+                        <div id="thumbnailContainer">
+            <div class="thumbnails"></div>
+        </div>
+        <div id="loupeContainer" class="show-corners">
+            <div class="background"></div>
+            <div class="image-container"></div>    
+            <div class="side-navigation">
+                <div class="hotspot" id="hotspotPrevLoupe">
+                    <div class="button" id="buttonPrevSideLoupe">
+                        <svg version="1.1" baseProfile="basic" id="svgIconPrevSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve"><path class="icon custom-colorable" fill="#231F20" d="M0,0l0,50h50V0L0,0z M18.491,25.05l9.707-9.264c0.418-0.399,1.092-0.403,1.506-0.008l1.498,1.43c0.413,0.395,0.41,1.039-0.009,1.438l-6.765,6.456l6.613,6.31c0.41,0.392,0.414,1.024,0.008,1.412l-1.471,1.404c-0.406,0.387-1.068,0.384-1.479-0.008l-6.612-6.311L18.491,25.05z"/></svg>
+                    </div>
+                </div>
+                <div class="hotspot" id="hotspotNextLoupe">
+                    <div class="button" id="buttonNextSideLoupe">
+                        <svg version="1.1" baseProfile="basic" id="svgIconNextSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve">
+                            <path class="icon custom-colorable" fill="#231F20" d="M0,0v50h50V0H0z M28.513,27.909l-6.612,6.311c-0.411,0.392-1.073,0.395-1.479,0.008l-1.471-1.404 c-0.406-0.388-0.402-1.02,0.008-1.412l6.613-6.31l-6.765-6.456c-0.419-0.399-0.422-1.043-0.009-1.438l1.498-1.43 c0.414-0.395,1.088-0.391,1.506,0.008l9.707,9.264L28.513,27.909z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="lateral-nav-container">
+                <ul class="lateral-nav">
+                    <li id="buttonPrev">
+                        <svg version="1.1" id="svgIconPrevLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                            </style>
+                            <path class="icon custom-colorable" d="M25.20105,14.76864l-8.2004,7.773l2.5314,2.3992l5.5858,5.2952c0.3469,0.3289,0.9064,0.3318,1.2497,0.0065
+                                l1.2431-1.1783c0.3429-0.3252,0.3398-0.8555-0.0071-1.1846l-5.5864-5.2948l5.7149-5.4171c0.3535-0.3349,0.3568-0.875,0.0074-1.2063
+                                l-1.2657-1.1995C26.12435,14.43064,25.55435,14.43354,25.20105,14.76864z"/>
+                        </svg>
+                    </li>
+                    <li class="count"><span id="countCurrent"></span> of <span id="countTotal"></span></li>
+                    <li id="buttonNext">
+                        <svg version="1.1" id="svgIconNextLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                            </style>
+                            <path class="icon custom-colorable" d="M19.79895,14.76864l8.2004,7.773l-2.5314,2.3992l-5.5858,5.2952c-0.3469,0.3289-0.9064,0.3318-1.2497,0.0065
+                                l-1.2431-1.1783c-0.3429-0.3252-0.3398-0.8555,0.0071-1.1846l5.5864-5.2948l-5.7149-5.4171
+                                c-0.3535-0.3349-0.3568-0.875-0.0074-1.2063l1.2657-1.1995C18.87565,14.43064,19.44565,14.43354,19.79895,14.76864z"/>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-container">
+                <div id="loupeMeta"></div>
+            </div>
+            <div id="loupeCloseButton">
+                <svg version="1.1" id="svgIconLoupeClose" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                    <path class="shape-x custom-colorable" d="M14.77881,17.30074l5.212,5.2222l-5.0831,5.0924c-0.3476,0.3484-0.5746,0.7624-0.2308,1.1067l1.5682,1.4763
+                        c0.3436,0.3443,0.8045,0.2596,1.1521-0.0886l5.0825-5.093l5.2119,5.222c0.3536,0.3547,0.9244,0.3578,1.2741,0.0073l1.2677-1.27
+                        c0.3497-0.3507,0.3465-0.9224-0.0071-1.2768l-5.2119-5.2221l5.0828-5.0925c0.3475-0.3485,0.5429-0.8259,0.1994-1.1702
+                        l-1.6474-1.4921c-0.3438-0.3443-0.6936-0.1803-1.0411,0.1679l-5.0828,5.0929l-5.212-5.222
+                        c-0.3537-0.3546-0.9241-0.3577-1.2742-0.007l-1.2672,1.2698C14.42171,16.37464,14.42491,16.94624,14.77881,17.30074z"/>
+                </svg>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var LR = LR || {};
+            LR.images = [                                                                                        {"id": "86", "largeWidth": "1200", "largeHeight": "769", "exportFilename": "20180526_04_20h48", "title": "", "caption" : ""},
+                         {"id": "134", "largeWidth": "1200", "largeHeight": "797", "exportFilename": "20180526_07_20h48", "title": "", "caption" : ""},
+                         {"id": "204", "largeWidth": "1200", "largeHeight": "819", "exportFilename": "20180526_12_20h49", "title": "", "caption" : ""},
+                         {"id": "274", "largeWidth": "1200", "largeHeight": "924", "exportFilename": "20180526_17_20h54", "title": "", "caption" : ""},
+                         {"id": "510", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_31_21h56", "title": "", "caption" : ""},
+                         {"id": "524", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_32_21h57", "title": "", "caption" : ""},
+                         {"id": "538", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_33_21h57", "title": "", "caption" : ""},
+                         {"id": "552", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_34_21h58", "title": "", "caption" : ""},
+                         {"id": "566", "largeWidth": "1200", "largeHeight": "971", "exportFilename": "20180526_35_21h59", "title": "", "caption" : ""},
+                         {"id": "594", "largeWidth": "1200", "largeHeight": "969", "exportFilename": "20180526_37_22h00", "title": "", "caption" : ""},
+                         {"id": "608", "largeWidth": "1200", "largeHeight": "854", "exportFilename": "20180526_38_22h01", "title": "", "caption" : ""},
+                         {"id": "648", "largeWidth": "1200", "largeHeight": "855", "exportFilename": "20180526_39_22h01", "title": "", "caption" : ""},
+                         {"id": "676", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_41_22h01", "title": "", "caption" : ""},
+                         {"id": "690", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_42_22h07", "title": "", "caption" : ""},
+                         {"id": "732", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_45_22h08", "title": "", "caption" : ""},
+                         {"id": "746", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_46_22h08", "title": "", "caption" : ""},
+                         {"id": "760", "largeWidth": "1200", "largeHeight": "885", "exportFilename": "20180526_47_22h09", "title": "", "caption" : ""},
+                         {"id": "788", "largeWidth": "1200", "largeHeight": "1128", "exportFilename": "20180526_49_22h09", "title": "", "caption" : ""},
+                         {"id": "816", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_51_22h13", "title": "", "caption" : ""},
+                         {"id": "870", "largeWidth": "1200", "largeHeight": "933", "exportFilename": "20180526_53_22h16", "title": "", "caption" : ""},
+                         {"id": "884", "largeWidth": "1200", "largeHeight": "991", "exportFilename": "20180526_54_22h16", "title": "", "caption" : ""},
+                         {"id": "898", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_55_22h17", "title": "", "caption" : ""},
+                         {"id": "912", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_56_22h23", "title": "", "caption" : ""},
+                         {"id": "926", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_57_22h25", "title": "", "caption" : ""},
+                         {"id": "940", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_58_22h27", "title": "", "caption" : ""},
+                         {"id": "968", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_60_22h29", "title": "", "caption" : ""},
+                         {"id": "982", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_61_22h29", "title": "", "caption" : ""},
+                         {"id": "996", "largeWidth": "1200", "largeHeight": "947", "exportFilename": "20180526_62_22h30", "title": "", "caption" : ""},
+                         {"id": "1112", "largeWidth": "1200", "largeHeight": "979", "exportFilename": "20180526_68_22h32", "title": "", "caption" : ""},
+                         {"id": "1140", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_70_22h42", "title": "", "caption" : ""},
+                         {"id": "1308", "largeWidth": "1200", "largeHeight": "985", "exportFilename": "20180526_82_22h52", "title": "", "caption" : ""},
+                         {"id": "1336", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_84_22h53", "title": "", "caption" : ""},
+                         {"id": "1350", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_85_23h00", "title": "", "caption" : ""},
+                         {"id": "1392", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_88_23h24", "title": "", "caption" : ""},
+                         {"id": "1406", "largeWidth": "1200", "largeHeight": "997", "exportFilename": "20180526_89_23h25", "title": "", "caption" : ""},
+                         {"id": "1420", "largeWidth": "1200", "largeHeight": "882", "exportFilename": "20180526_90_23h25", "title": "", "caption" : ""},
+                         {"id": "1434", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_91_23h26", "title": "", "caption" : ""},
+                         {"id": "1462", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180526_93_23h27", "title": "", "caption" : ""},
+                         {"id": "1504", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180527_96_00h00", "title": "", "caption" : ""},
+                         {"id": "1533", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180527_98_00h06", "title": "", "caption" : ""},
+                         {"id": "1575", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180527_101_00h09", "title": "", "caption" : ""},
+                         {"id": "1705", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180527_105_01h20", "title": "", "caption" : ""},
+                         {"id": "1747", "largeWidth": "1200", "largeHeight": "904", "exportFilename": "20180527_108_01h21", "title": "", "caption" : ""},
+                         {"id": "1761", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "20180527_109_01h21", "title": "", "caption" : ""},
+                                    ]        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="assets/js/libs/jquery.velocity.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
